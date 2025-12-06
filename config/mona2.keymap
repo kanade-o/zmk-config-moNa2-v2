@@ -102,7 +102,7 @@
 &kp Q               &kp W             &kp E             &kp R          &kp T                                            &kp Y        &kp U  &kp I      &kp O       &kp P
 &mt LEFT_CONTROL A  &kp S             &kp D             &kp F          &kp G                             &trans         &kp H        &kp J  &kp K      &kp L       &lt 3 SEMI
 &mt LSHIFT Z        &kp X             &kp C             &kp V          &kp B        &lt 4 F1             &trans         &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt LEFT_SHIFT SLASH
-&kp ESC             &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LC(SPACE)  &lt 1 SPACE  &mt RIGHT_ALT TAB    &kp BACKSPACE  &lt 1 ENTER                                &kp ESC
+&kp ESC             &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LC(SPACE)  &lt 2 SPACE  &mt RIGHT_ALT TAB    &kp BACKSPACE  &lt 1 ENTER                                &kp ESC
             >;
 
             sensor-bindings =
