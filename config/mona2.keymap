@@ -99,10 +99,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W             &kp E             &kp R          &kp T                                           &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S             &kp D             &kp F          &kp G        &trans              &kp DELETE     &kp H        &kp J  &kp K      &kp L    &lt 3 SEMICOLON
-&mt LEFT_SHIFT Z    &kp X             &kp C             &kp V          &kp B        &lt 4 C_VOL_DN      &kp TAB        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp ESC             &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LC(SPACE)  &lt 2 SPACE  &mt LEFT_ALT TAB    &kp BACKSPACE  &lt 1 ENTER                             &kp LEFT_CONTROL
+&kp Q               &kp W             &kp E             &kp R          &kp T                                            &kp Y        &kp U  &kp I      &kp O       &kp P
+&mt LEFT_CONTROL A  &kp S             &kp D             &kp F          &kp G                             &trans         &kp H        &kp J  &kp K      &kp L       &lt 3 SEMI
+&mt LSHIFT Z        &kp X             &kp C             &kp V          &kp B        &lt 4 F1             &trans         &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt LEFT_SHIFT SLASH
+&kp ESC             &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LC(SPACE)  &lt 1 SPACE  &mt RIGHT_ALT TAB    &kp BACKSPACE  &lt 1 ENTER                                &kp ESC
             >;
 
             sensor-bindings =
@@ -112,10 +112,10 @@
 
         num_and_symbols {
             bindings = <
-&kp GRAVE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9   &kp AT                                           &kp QUESTION   &kp PERCENT           &kp PLUS               &kp ASTERISK    &kp AMPERSAND
-&kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp HASH      &kp LC(LA(KP_NUMBER_0))    &trans  &kp EXCL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp QUESTION  &trans                     &trans  &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET       &kp DOLLAR
-&trans           &trans           &kp COMMA        &kp LEFT_COMMAND  &trans        &trans                     &trans  &trans                                                                      &trans
+&kp GRAVE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp AT                                                     &kp QUESTION  &kp PERCENT    &kp PLUS              &kp ASTERISK           &kp AMPERSAND
+&kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp HASH                          &kp LC(LA(KP_NUMBER_0))  &trans        &kp EXCL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE
+&kp RIGHT_BRACE  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp QUESTION    &trans                   &trans        &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET
+&kp DOLLAR       &trans           &trans           &kp COMMA        &kp LEFT_COMMAND  &trans          &trans                   &trans                                                                    &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -123,10 +123,10 @@
 
         arrow_and_func {
             bindings = <
-&kp LS(LG(NUMBER_4))  &kp LC(LG(F))       &kp LG(PLUS)      &kp LG(MINUS)     &kp F11                                &trans    &kp LG(LS(LEFT_BRACKET))  &kp LC(LG(RIGHT_BRACKET))  &trans             &trans
-&kp LA(KP_NUMBER_1)   &kp LC(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LG(SPACE)     &kp LC(RIGHT_ARROW)  &trans    &trans  &kp LEFT  &kp DOWN_ARROW            &kp UP_ARROW               &kp RIGHT_ARROW    &kp TAB
-&kp LEFT_SHIFT        &trans              &trans            &trans            &trans               &trans    &trans  &trans    &kp LA(LC(LEFT))          &kp LA(UP_ARROW)           &kp LC(LA(RIGHT))  &trans
-&trans                &trans              &trans            &kp LEFT_COMMAND  &trans               &trans    &trans  &trans                                                                            &trans
+&kp LS(LG(NUMBER_4))  &kp LC(LG(F))       &kp LG(PLUS)      &kp LG(MINUS)  &kp F11                                &trans  &kp LG(LS(LEFT_BRACKET))  &kp LC(LG(RIGHT_BRACKET))  &trans            &trans
+&kp LA(KP_NUMBER_1)   &kp LC(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LG(SPACE)  &kp LC(RIGHT_ARROW)            &trans  &trans  &kp LEFT                  &kp DOWN_ARROW             &kp UP_ARROW      &kp RIGHT_ARROW
+&kp TAB               &kp LEFT_SHIFT      &trans            &trans         &trans               &trans    &trans  &trans  &trans                    &kp LA(LC(LEFT))           &kp LA(UP_ARROW)  &kp LC(LA(RIGHT))
+&trans                &trans              &trans            &trans         &kp LEFT_COMMAND     &trans    &trans  &trans                                                                         &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -134,19 +134,19 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans     &trans     &trans                    &trans    &trans    &mkp MB3  &trans    &trans
-&trans  &trans  &trans     &trans     &trans  &trans    &trans  &mkp MB4  &mkp MB1  &mkp MB2  &mkp MB5  &trans
-&trans  &trans  &kp LG(C)  &kp LG(V)  &trans  &trans    &trans  &trans    &trans    &trans    &trans    &trans
-&trans  &trans  &trans     &trans     &trans  &trans    &trans  &trans                                  &trans
+&trans  &trans  &trans  &trans     &trans                       &trans  &trans    &mkp MB3  &trans    &trans
+&trans  &trans  &trans  &trans     &trans               &trans  &trans  &mkp MB4  &mkp MB1  &mkp MB2  &mkp MB5
+&trans  &trans  &trans  &kp LG(C)  &kp LG(V)  &trans    &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans     &trans     &trans    &trans  &trans                                &trans
             >;
         };
 
         bluetooth {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans                                                  &bt BT_CLR_ALL
+&trans      &trans  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans      &trans  &trans  &trans  &trans            &trans  &trans        &trans        &trans        &trans        &trans
+&trans      &trans  &trans  &trans  &trans  &trans    &trans  &bootloader   &trans        &trans        &trans        &trans
+&bt BT_CLR  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                  &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
